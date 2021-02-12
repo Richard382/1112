@@ -229,7 +229,8 @@
                         <a href="https://www.swr.de/swr2/literatur/bookreview-swr-412.html">  
                             <div class="panel-item p-3">
                                 <div class="card-img pb-3">
-                                        <span class="mbr-iconfont mbrib-layers"></span>
+                                        <!-- <span class="mbr-iconfont mbrib-layers"></span> -->
+                                        <img src="assets/images/image2.jpg" alt="" style="margin-bottom:20px">
                                 </div>
 
                                 <div class="card-text">
@@ -248,7 +249,8 @@
                         <a href="https://www.openculture.com/2016/07/how-to-jumpstart-your-creative-process-with-william-s-burroughs-cut-up-technique.html">
                             <div class="panel-item p-3">
                                 <div class="card-img pb-3">
-                                    <span class="mbr-iconfont mobi-mbri-contact-form mobi-mbri"></span>
+                                    <!-- <span class="mbr-iconfont mobi-mbri-contact-form mobi-mbri"></span> -->
+                                    <img src="assets/images/image3.jpg" style="margin-bottom:20px" alt="">
                                 </div>
                                 <div class="card-text">
                                     <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">
@@ -266,7 +268,8 @@
                         <a href="https://en.wikipedia.org/wiki/Cut-up_technique">
                             <div class="panel-item p-3">
                                 <div class="card-img pb-3">
-                                    <span class="mbr-iconfont mbrib-growing-chart"></span>
+                                    <!-- <span class="mbr-iconfont mbrib-growing-chart"></span> -->
+                                    <img src="assets/images/image4.jpg" alt="" style="margin-bottom:20px">
                                 </div>
                                 <div class="card-text">
                                     <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">
@@ -355,116 +358,10 @@
         <h1 class="mbr-section-title align-center mbr-black pb-3 mbr-bold mbr-fonts-style display-2" style="padding-top:20px;">Projects</h1>
         <div class="container">
             <div>
+                <iframe width="420" height="315"
+                src="https://www.bbc.com/news/av/entertainment-arts-35281247">
+                </iframe>
                 
-                <div class="mbr-gallery-row">
-                    <div class="mbr-gallery-layout-default">
-                        <div>
-                            <div>
-                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
-                                    data-tags="Design">
-                                    <div href="#lb-gallery2-i" data-slide-to="0" data-toggle="modal"><img
-                                            src="assets/images/project1.jpg" alt="" title=""><span
-                                            class="icon-focus"></span><span
-                                            class="mbr-gallery-title mbr-fonts-style display-7">Project &nbsp;1</span>
-                                    </div>
-                                </div>
-                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
-                                    data-tags="Design">
-                                    <div href="#lb-gallery2-i" data-slide-to="1" data-toggle="modal"><img
-                                            src="assets/images/project2.jpg" alt="" title=""><span
-                                            class="icon-focus"></span><span
-                                            class="mbr-gallery-title mbr-fonts-style display-7">Project &nbsp;1</span>
-                                    </div>
-                                </div>
-                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
-                                    data-tags="Design">
-                                    <div href="#lb-gallery2-i" data-slide-to="2" data-toggle="modal"><img
-                                            src="assets/images/project3.jpg" alt="" title=""><span
-                                            class="icon-focus"></span><span
-                                            class="mbr-gallery-title mbr-fonts-style display-7">Project &nbsp;1</span>
-                                    </div>
-                                </div>
-                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
-                                    data-tags="Design">
-                                    <div href="#lb-gallery2-i" data-slide-to="3" data-toggle="modal"><img
-                                            src="assets/images/project4.jpg" alt="" title=""><span
-                                            class="icon-focus"></span><span
-                                            class="mbr-gallery-title mbr-fonts-style display-7">Project &nbsp;1</span>
-                                    </div>
-                                </div>
-                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
-                                    data-tags="Design">
-                                    <div href="#lb-gallery2-i" data-slide-to="4" data-toggle="modal"><img
-                                            src="assets/images/project5.jpg" alt="" title=""><span
-                                            class="icon-focus"></span><span
-                                            class="mbr-gallery-title mbr-fonts-style display-7">Project &nbsp;1</span>
-                                    </div>
-                                </div>
-                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
-                                    data-tags="Design">
-                                    <div href="#lb-gallery2-i" data-slide-to="5" data-toggle="modal"><img
-                                            src="assets/images/project6.jpg" alt="" title=""><span
-                                            class="icon-focus"></span><span
-                                            class="mbr-gallery-title mbr-fonts-style display-7">Project &nbsp;1</span>
-                                    </div>
-                                </div>
-                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
-                                    data-tags="Design">
-                                    <div href="#lb-gallery2-i" data-slide-to="6" data-toggle="modal"><img
-                                            src="assets/images/project7.jpg" alt="" title=""><span
-                                            class="icon-focus"></span><span
-                                            class="mbr-gallery-title mbr-fonts-style display-7">Project &nbsp;1</span>
-                                    </div>
-                                </div>
-                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
-                                    data-tags="Design">
-                                    <div href="#lb-gallery2-i" data-slide-to="7" data-toggle="modal"><img
-                                            src="assets/images/project8.jpg" alt="" title=""><span
-                                            class="icon-focus"></span><span
-                                            class="mbr-gallery-title mbr-fonts-style display-7">Project &nbsp;1</span>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div><!-- Lightbox -->
-                <div data-app-prevent-settings="" class="mbr-slider modal fade carousel slide" tabindex="-1"
-                    data-keyboard="true" data-interval="false" id="lb-gallery2-i">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active"><img src="assets/images/project1.jpg" alt=""
-                                            title=""></div>
-                                    <div class="carousel-item"><img src="assets/images/project2.jpg"
-                                            alt="" title=""></div>
-                                    <div class="carousel-item"><img src="assets/images/project3.jpg" alt=""
-                                            title=""></div>
-                                    <div class="carousel-item"><img src="assets/images/project4.jpg" alt=""
-                                            title=""></div>
-                                    <div class="carousel-item"><img src="assets/images/project5.jpg"
-                                            alt="" title=""></div>
-                                    <div class="carousel-item"><img
-                                            src="assets/images/project6.jpg" alt=""
-                                            title=""></div>
-                                    <div class="carousel-item"><img src="assets/images/project7.jpg" alt=""
-                                            title=""></div>
-                                    <div class="carousel-item"><img src="assets/images/project8.jpg" alt=""
-                                            title=""></div>
-                                   
-                                </div><a class="carousel-control carousel-control-prev" role="button" data-slide="prev"
-                                    href="#lb-gallery2-i"><span class="mbri-left mbr-iconfont"
-                                        aria-hidden="true"></span><span class="sr-only">Previous</span></a><a
-                                    class="carousel-control carousel-control-next" role="button" data-slide="next"
-                                    href="#lb-gallery2-i"><span class="mbri-right mbr-iconfont"
-                                        aria-hidden="true"></span><span class="sr-only">Next</span></a><a class="close"
-                                    href="#" role="button" data-dismiss="modal"><span class="sr-only">Close</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 

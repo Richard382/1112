@@ -16,8 +16,8 @@ else {
 $s = fopen("assets/sentences.csv", "r");
 $array_title = array();
 $array_sentence = array();
-$sentences = fgetcsv($s, 97, ",");
-while (($sentences = fgetcsv($s, 97, ",")) !== FALSE) 
+$sentences = fgetcsv($s, 9700, ",");
+while (($sentences = fgetcsv($s, 9700, ",")) !== FALSE) 
 {
     array_push($array_title, $sentences[0]);
     array_push($array_sentence, $sentences[1]);
@@ -25,8 +25,8 @@ while (($sentences = fgetcsv($s, 97, ",")) !== FALSE)
 fclose($s);
 
 $h = fopen("assets/english.csv", "r");
-$data = fgetcsv($h, 97, ",");
-while (($data = fgetcsv($h, 97, ",")) !== FALSE) 
+$data = fgetcsv($h, 9700, ",");
+while (($data = fgetcsv($h, 9700, ",")) !== FALSE) 
 {
     $the_big_array[] = $data[0];
     $the_big_array1[] = $data[1];
@@ -56,8 +56,8 @@ for ($x = 0; $x < 15; $x++) {
 }
 
 $h = fopen("assets/deutsch.csv", "r");
-$data = fgetcsv($h, 97, ",");
-while (($data = fgetcsv($h, 97, ",")) !== FALSE) 
+$data = fgetcsv($h, 9700, ",");
+while (($data = fgetcsv($h, 9700, ",")) !== FALSE) 
 {
     $the_big_array[] = $data[0];
     $the_big_array1[] = $data[1];
@@ -196,11 +196,12 @@ for ($x = 0; $x < 15; $x++) {
       
         <div class="modal-header">
           <h3 class="modal-title">Edit Text</h3>
-          <button type="button" class="close" data-dismiss="modal">×</button>
+          <button type="button" id="exit_modal" class="close" data-dismiss="modal">×</button>
         </div>
         
         <div class="modal-body">
             <div class="header">
+            
                 <label for="id_modal_edit_text">Edit Sentence</label>
                 <input type="radio" name="mode" id="id_modal_edit_text" value="edit" checked>
                 <label for="id_modal_add_text">Add Text</label>
@@ -208,7 +209,7 @@ for ($x = 0; $x < 15; $x++) {
             </div>
 
             <div class="modal_edit_text" style="display:flex; justify-content: space-evenly; padding: 20px 0px;">
-                <select name="sentences" id="id_modal_select" style="width:30%; height:30px;">
+                <select name="sentences" id="id_modal_select" style="width:30%; height:30px;" >
                 </select>
                 <textarea name="modal_edit_textarea" id="id_modal_edit_textarea" cols="30" rows="2"></textarea>
             </div>
@@ -230,7 +231,7 @@ for ($x = 0; $x < 15; $x++) {
         <div class="modal-footer">
         <button type="button" class="btn btn-danger" id="removeBtn" style="position:absolute; left:10px;" data-dismiss="modal">Delete</button>
           <button type="button" class="btn btn-primary" id="saveBtn" data-dismiss="modal">Save</button>
-          <button type="button" class="btn btn-primary" id="insertBtn" hidden data-dismiss="modal">Add</button>
+          <button type="button" class="btn btn-primary" id="insertBtn" hidden >Add</button>
           <button type="button" class="btn btn-secondary" id="cancelBtn" data-dismiss="modal">Cancel</button>
         </div>
         
@@ -310,6 +311,21 @@ for ($x = 0; $x < 15; $x++) {
             Clock.remove();
             Clock.start();
         }
+
+        function initSelects()
+        {
+            mainSelect = document.getElementById('select_sentence');
+            modalSelect = document.getElementById('id_modal_select');
+            mainSelect.innerHTML = "";
+            modalSelect.innerHTML = "";
+            for(var i = 0; i < array_title.length; i++ )
+            {
+                mainSelect.options[i] = new Option(array_title[i], i);
+                modalSelect.options[i] = new Option(array_title[i], i);
+            }
+        
+        }
+        
        
   jQuery(document).ready(function($) {
         function start(){
@@ -328,14 +344,8 @@ for ($x = 0; $x < 15; $x++) {
         }
         start();
         jQuery('#id_modal_edit_textarea').val(array_sentence[0]);
-        mainSelect = document.getElementById('select_sentence');
-        modalSelect = document.getElementById('id_modal_select');
-        for(var i = 0; i < array_title.length; i++ )
-        {
-            mainSelect.options[i] = new Option(array_title[i], array_sentence[i]);
-            modalSelect.options[i] = new Option(array_title[i], array_sentence[i]);
-        }
-        
+        initSelects();
+     
 
 
         jQuery('#restart').click(function(){
@@ -368,7 +378,7 @@ for ($x = 0; $x < 15; $x++) {
       
      
         $('#select_sentence').change(function() {
-            words = $(this).val().split(' ');
+            words = array_sentence[jQuery(this).val()].split(' ');
             countOfWord = words.length;
             removeWords();
             makeWords(words, countOfWord);
@@ -377,7 +387,7 @@ for ($x = 0; $x < 15; $x++) {
          });
      
          $('#id_modal_select').change(function() {
-            jQuery('#id_modal_edit_textarea').val(jQuery(this).val());
+            jQuery('#id_modal_edit_textarea').val(array_sentence[jQuery(this).val()]);
          });
 
         function reheight() {
@@ -495,7 +505,7 @@ for ($x = 0; $x < 15; $x++) {
         jQuery("input[name=radio_mode]").change(function () {
             if(jQuery('input[name=radio_mode]:checked').val() == 'custom_mode')
             {
-                    words = jQuery('#select_sentence').val().split(' ');
+                    words = array_sentence[jQuery('#select_sentence').val()].split(' ');
                     countOfWord = words.length;
                     removeWords();
                     makeWords(words, countOfWord);
@@ -524,7 +534,9 @@ for ($x = 0; $x < 15; $x++) {
         });
 
         jQuery('#id_modal_edit_textarea').change(function() {
-            array_sentence[jQuery("#id_modal_select")[0].selectedIndex] = jQuery(this).val().replace(/\n/g, " ");
+            var text = jQuery(this).val().replaceAll(/\n/g, " ");
+            text = text.replaceAll(',',' ');
+            array_sentence[jQuery("#id_modal_select")[0].selectedIndex] = text;
         });
 
         jQuery('#saveBtn').click(function() {
@@ -539,7 +551,7 @@ for ($x = 0; $x < 15; $x++) {
             }).fail(function(jqXHR){
                 alert(jqXHR.status +' '+jqXHR.statusText+ ' $.post failed!');
             });  
-            location.reload();
+            initSelects();
         });
 
         jQuery('#removeBtn').click(function() {
@@ -553,16 +565,18 @@ for ($x = 0; $x < 15; $x++) {
             }
             var url ="save.php";
             jQuery.post(url, {myText:csvContent}, function(data){
+                initSelects();
             }).fail(function(jqXHR){
                 alert(jqXHR.status +' '+jqXHR.statusText+ ' $.post failed!');
             }); 
-            location.reload();
+           
         });
 
         jQuery('#insertBtn').click(function() {
             if(jQuery('#new_title').val() == '' || jQuery('#id_modal_new_textarea').val() == '') return;
             var textContent = jQuery('#id_modal_new_textarea').val();
-            textContent = textContent.replace(/\n/g, " ");
+            textContent = textContent.replaceAll(/\n/g, " ");
+            textContent = textContent.replaceAll(',', " ");
             let csvContent = "title,content\r\n";
             for(var i = 0; i < array_sentence.length; i++)
             {
@@ -573,10 +587,15 @@ for ($x = 0; $x < 15; $x++) {
             csvContent += textContent+ "\r\n";
             var url ="save.php";
             jQuery.post(url, {myText:csvContent}, function(data){
+                array_title.push(jQuery('#new_title').val());
+                array_sentence.push(textContent);
+                jQuery('#exit_modal').click();
+                initSelects();
             }).fail(function(jqXHR){
                 alert(jqXHR.status +' '+jqXHR.statusText+ ' $.post failed!');
             });
-            location.reload();
+            
+           
         });
 
         jQuery('#pauseButton').click(function () { 
