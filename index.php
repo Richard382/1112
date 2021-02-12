@@ -46,7 +46,15 @@
             -ms-user-select: none;
             user-select: none;
         }
+        .container p,
+        .container label{
+            color:#fff;
+        }
 
+        .text-container p 
+        {
+            color: #121212 !important;
+        }
 
         /* Create a custom radio button */
         .checkmark {
@@ -130,9 +138,9 @@
                     <li class="nav-item"><a class="nav-link link text-white display-4"
                             href="index.html#header3-c">Intro</a></li>
                     <li class="nav-item"><a class="nav-link link text-white display-4"
-                            href="index.html#content7-g">Main</a></li>
+                            href="index.html#header4-k">Main</a></li>
                     <li class="nav-item"><a class="nav-link link text-white display-4"
-                            href="index.html#gallery2-i">Gallery</a></li>
+                            href="index.html#gallery2-i">Projects</a></li>
                     <li class="nav-item"><a class="nav-link link text-white display-4"
                             href="index.html#testimonials3-8">About</a></li>
                     <li class="nav-item"><a class="nav-link link text-white display-4"
@@ -216,59 +224,62 @@
         <div class="container">
             <div class="container pt-4 mt-2">
                 <div class="media-container-row">
+                
                     <div class="card p-3 align-center col-12 col-md-6 col-lg-4">
-                        <div class="panel-item p-3">
-                            <div class="card-img pb-3">
-                                <span class="mbr-iconfont mbrib-layers"></span>
-                            </div>
+                        <a href="https://www.swr.de/swr2/literatur/bookreview-swr-412.html">  
+                            <div class="panel-item p-3">
+                                <div class="card-img pb-3">
+                                        <span class="mbr-iconfont mbrib-layers"></span>
+                                </div>
 
-                            <div class="card-text">
-                                <h3 class="count pt-3 pb-3 mbr-fonts-style display-2">1</h3>
-                                <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">Herta Müller</h4>
-                                <p class="mbr-content-text mbr-fonts-style display-7">
-                                    Great word art: Nobel Prize winner Herta Müller collects words. She cuts them out of
-                                    magazines and reassembles the finds. This creates collages of poetic materiality
-                                </p>
+                                <div class="card-text">
+                                    <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">Herta Müller</h4>
+                                    <p class="mbr-content-text mbr-fonts-style display-7">
+                                        Great word art: Nobel Prize winner Herta Müller collects words. She cuts them out of
+                                        magazines and reassembles the finds. This creates collages of poetic materiality
+                                    </p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
 
                     <div class="card p-3 align-center col-12 col-md-6 col-lg-4">
-                        <div class="panel-item p-3">
-                            <div class="card-img pb-3">
-                                <span class="mbr-iconfont mobi-mbri-contact-form mobi-mbri"></span>
+                        <a href="https://www.openculture.com/2016/07/how-to-jumpstart-your-creative-process-with-william-s-burroughs-cut-up-technique.html">
+                            <div class="panel-item p-3">
+                                <div class="card-img pb-3">
+                                    <span class="mbr-iconfont mobi-mbri-contact-form mobi-mbri"></span>
+                                </div>
+                                <div class="card-text">
+                                    <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">
+                                    Willam S. Burroughs:
+                                    </h4>
+                                    <p class="mbr-content-text mbr-fonts-style display-7">
+                                        How to Jumpstart Your Creative Process with William S. Burroughs’ Cut-Up Technique
+                                    </p>
+                                </div>
                             </div>
-                            <div class="card-text">
-                                <h3 class="count pt-3 pb-3 mbr-fonts-style display-2">2</h3>
-                                <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">
-                                    WILLKOMMEN
-                                </h4>
-                                <p class="mbr-content-text mbr-fonts-style display-7">
-                                    After completing the environmental analysis the next stage is to design and plan
-                                    your development strategy
-                                </p>
-                            </div>
-                        </div>
+                        </a>
                     </div>
 
                     <div class="card p-3 align-center col-12 col-md-6 col-lg-4">
-                        <div class="panel-item p-3">
-                            <div class="card-img pb-3">
-                                <span class="mbr-iconfont mbrib-growing-chart"></span>
+                        <a href="https://en.wikipedia.org/wiki/Cut-up_technique">
+                            <div class="panel-item p-3">
+                                <div class="card-img pb-3">
+                                    <span class="mbr-iconfont mbrib-growing-chart"></span>
+                                </div>
+                                <div class="card-text">
+                                    <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">
+                                        Cut-up technique
+                                        <div><br></div>
+                                    </h4>
+                                    <p class="mbr-content-text mbr-fonts-style display-7">
+                                        The cut-up technique (or découpé in French) is an aleatory literary technique in which
+                                        a written text is cut up and rearranged to create a new text.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="card-text">
-                                <h3 class="count pt-3 pb-3 mbr-fonts-style display-2">3</h3>
-                                <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">Execution &amp;
-                                    Evaluation
-                                    <div><br></div>
-                                </h4>
-                                <p class="mbr-content-text mbr-fonts-style display-7">
-                                    In this phase you will focus on executing the actions plan and evaluating the
-                                    results after each marketing campaign
-                                </p>
-                            </div>
-                        </div>
+                        </a>
                     </div>
 
 
@@ -309,7 +320,7 @@
            
     <div class="image-container col-lg-7"  id="start_form_panel" >
                     <div class="form" id="start_form">
-                        <form action="game.php">
+                      <form action="game.php">
                             <p>
                                 Select Time Limit:</p>
                             <label class="container">15 min
@@ -341,16 +352,10 @@
 
 
     <section class="mbr-gallery mbr-slider-carousel cid-sn6XE8MPnG" id="gallery2-i">
-        <h1 class="mbr-section-title align-center mbr-black pb-3 mbr-bold mbr-fonts-style display-2" style="padding-top:20px;">Gallery</h1>
+        <h1 class="mbr-section-title align-center mbr-black pb-3 mbr-bold mbr-fonts-style display-2" style="padding-top:20px;">Projects</h1>
         <div class="container">
             <div>
-                <!-- Filter -->
-                <div class="mbr-gallery-filter container gallery-filter-active">
-                    <ul buttons="0">
-                        <li class="mbr-gallery-filter-all"><a class="btn btn-md btn-primary-outline active display-7"
-                                href="">All</a></li>
-                    </ul>
-                </div><!-- Gallery -->
+                
                 <div class="mbr-gallery-row">
                     <div class="mbr-gallery-layout-default">
                         <div>
@@ -358,7 +363,7 @@
                                 <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
                                     data-tags="Design">
                                     <div href="#lb-gallery2-i" data-slide-to="0" data-toggle="modal"><img
-                                            src="assets/images/project-1-2000x2829-800x1132.jpg" alt="" title=""><span
+                                            src="assets/images/project1.jpg" alt="" title=""><span
                                             class="icon-focus"></span><span
                                             class="mbr-gallery-title mbr-fonts-style display-7">Project &nbsp;1</span>
                                     </div>
@@ -366,108 +371,60 @@
                                 <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
                                     data-tags="Design">
                                     <div href="#lb-gallery2-i" data-slide-to="1" data-toggle="modal"><img
-                                            src="assets/images/project-1-2000x2829-800x1132-800x1132.jpg" alt=""
-                                            title=""><span class="icon-focus"></span><span
-                                            class="mbr-gallery-title mbr-fonts-style display-7">Project 2</span></div>
+                                            src="assets/images/project2.jpg" alt="" title=""><span
+                                            class="icon-focus"></span><span
+                                            class="mbr-gallery-title mbr-fonts-style display-7">Project &nbsp;1</span>
+                                    </div>
                                 </div>
                                 <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
                                     data-tags="Design">
                                     <div href="#lb-gallery2-i" data-slide-to="2" data-toggle="modal"><img
-                                            src="assets/images/project-5-360x488-360x488.jpg" alt="" title=""><span
+                                            src="assets/images/project3.jpg" alt="" title=""><span
                                             class="icon-focus"></span><span
-                                            class="mbr-gallery-title mbr-fonts-style display-7">Project 3</span></div>
+                                            class="mbr-gallery-title mbr-fonts-style display-7">Project &nbsp;1</span>
+                                    </div>
                                 </div>
                                 <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
-                                    data-tags="Development">
+                                    data-tags="Design">
                                     <div href="#lb-gallery2-i" data-slide-to="3" data-toggle="modal"><img
-                                            src="assets/images/project-1-2000x2829-800x1132.jpg" alt="" title=""><span
+                                            src="assets/images/project4.jpg" alt="" title=""><span
                                             class="icon-focus"></span><span
-                                            class="mbr-gallery-title mbr-fonts-style display-7">Project 4</span></div>
+                                            class="mbr-gallery-title mbr-fonts-style display-7">Project &nbsp;1</span>
+                                    </div>
                                 </div>
                                 <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
-                                    data-tags="Development">
+                                    data-tags="Design">
                                     <div href="#lb-gallery2-i" data-slide-to="4" data-toggle="modal"><img
-                                            src="assets/images/project-1-2000x2829-800x1132-800x1132.jpg" alt=""
-                                            title=""><span class="icon-focus"></span><span
-                                            class="mbr-gallery-title mbr-fonts-style display-7">Project 5</span></div>
+                                            src="assets/images/project5.jpg" alt="" title=""><span
+                                            class="icon-focus"></span><span
+                                            class="mbr-gallery-title mbr-fonts-style display-7">Project &nbsp;1</span>
+                                    </div>
                                 </div>
                                 <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
-                                    data-tags="Development">
+                                    data-tags="Design">
                                     <div href="#lb-gallery2-i" data-slide-to="5" data-toggle="modal"><img
-                                            src="assets/images/project-1-2000x2829-800x1132-800x1132-800x1132.jpg"
-                                            alt="" title=""><span class="icon-focus"></span><span
-                                            class="mbr-gallery-title mbr-fonts-style display-7">Project 6</span></div>
+                                            src="assets/images/project6.jpg" alt="" title=""><span
+                                            class="icon-focus"></span><span
+                                            class="mbr-gallery-title mbr-fonts-style display-7">Project &nbsp;1</span>
+                                    </div>
                                 </div>
                                 <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
-                                    data-tags="Development">
+                                    data-tags="Design">
                                     <div href="#lb-gallery2-i" data-slide-to="6" data-toggle="modal"><img
-                                            src="assets/images/project-1-2000x2829-800x1132.jpg" alt="" title=""><span
+                                            src="assets/images/project7.jpg" alt="" title=""><span
                                             class="icon-focus"></span><span
-                                            class="mbr-gallery-title mbr-fonts-style display-7">Project 7</span></div>
+                                            class="mbr-gallery-title mbr-fonts-style display-7">Project &nbsp;1</span>
+                                    </div>
                                 </div>
                                 <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
-                                    data-tags="Development">
+                                    data-tags="Design">
                                     <div href="#lb-gallery2-i" data-slide-to="7" data-toggle="modal"><img
-                                            src="assets/images/project-5-360x488-360x488.jpg" alt="" title=""><span
+                                            src="assets/images/project8.jpg" alt="" title=""><span
                                             class="icon-focus"></span><span
-                                            class="mbr-gallery-title mbr-fonts-style display-7">Project 8</span></div>
+                                            class="mbr-gallery-title mbr-fonts-style display-7">Project &nbsp;1</span>
+                                    </div>
                                 </div>
-                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
-                                    data-tags="Marketing">
-                                    <div href="#lb-gallery2-i" data-slide-to="8" data-toggle="modal"><img
-                                            src="assets/images/project-1-2000x2829-800x1132.jpg" alt="" title=""><span
-                                            class="icon-focus"></span><span
-                                            class="mbr-gallery-title mbr-fonts-style display-7">Project 9</span></div>
-                                </div>
-                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
-                                    data-tags="Marketing">
-                                    <div href="#lb-gallery2-i" data-slide-to="9" data-toggle="modal"><img
-                                            src="assets/images/project-1-2000x2829-800x1132-800x1132.jpg" alt=""
-                                            title=""><span class="icon-focus"></span><span
-                                            class="mbr-gallery-title mbr-fonts-style display-7">Project 10</span></div>
-                                </div>
-                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
-                                    data-tags="Marketing">
-                                    <div href="#lb-gallery2-i" data-slide-to="10" data-toggle="modal"><img
-                                            src="assets/images/project-5-360x488-360x488.jpg" alt="" title=""><span
-                                            class="icon-focus"></span><span
-                                            class="mbr-gallery-title mbr-fonts-style display-7">Project 11</span></div>
-                                </div>
-                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
-                                    data-tags="Marketing">
-                                    <div href="#lb-gallery2-i" data-slide-to="11" data-toggle="modal"><img
-                                            src="assets/images/project-5-360x488-360x488-360x488.jpg" alt=""
-                                            title=""><span class="icon-focus"></span><span
-                                            class="mbr-gallery-title mbr-fonts-style display-7">Project 12</span></div>
-                                </div>
-                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
-                                    data-tags="Marketing">
-                                    <div href="#lb-gallery2-i" data-slide-to="12" data-toggle="modal"><img
-                                            src="assets/images/project-5-360x488-360x488.jpg" alt="" title=""><span
-                                            class="icon-focus"></span><span
-                                            class="mbr-gallery-title mbr-fonts-style display-7">Project 13</span></div>
-                                </div>
-                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
-                                    data-tags="Marketing">
-                                    <div href="#lb-gallery2-i" data-slide-to="13" data-toggle="modal"><img
-                                            src="assets/images/project-5-360x488-360x488.jpg" alt="" title=""><span
-                                            class="icon-focus"></span><span
-                                            class="mbr-gallery-title mbr-fonts-style display-7">Project 14</span></div>
-                                </div>
-                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
-                                    data-tags="SEO">
-                                    <div href="#lb-gallery2-i" data-slide-to="14" data-toggle="modal"><img
-                                            src="assets/images/project-5-360x488-360x488.jpg" alt="" title=""><span
-                                            class="icon-focus"></span><span
-                                            class="mbr-gallery-title mbr-fonts-style display-7">Project 15</span></div>
-                                </div>
-                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
-                                    data-tags="SEO">
-                                    <div href="#lb-gallery2-i" data-slide-to="15" data-toggle="modal"><img
-                                            src="assets/images/project-5-360x488-360x488.jpg" alt="" title=""><span
-                                            class="icon-focus"></span><span
-                                            class="mbr-gallery-title mbr-fonts-style display-7">Project 16</span></div>
-                                </div>
+                                
                             </div>
                         </div>
                         <div class="clearfix"></div>
@@ -479,39 +436,24 @@
                         <div class="modal-content">
                             <div class="modal-body">
                                 <div class="carousel-inner">
-                                    <div class="carousel-item"><img src="assets/images/project-1-2000x2829.jpg" alt=""
+                                    <div class="carousel-item active"><img src="assets/images/project1.jpg" alt=""
                                             title=""></div>
-                                    <div class="carousel-item"><img src="assets/images/project-1-2000x2829-800x1132.jpg"
+                                    <div class="carousel-item"><img src="assets/images/project2.jpg"
                                             alt="" title=""></div>
-                                    <div class="carousel-item"><img src="assets/images/project-5-360x488.jpg" alt=""
+                                    <div class="carousel-item"><img src="assets/images/project3.jpg" alt=""
                                             title=""></div>
-                                    <div class="carousel-item"><img src="assets/images/project-1-2000x2829.jpg" alt=""
+                                    <div class="carousel-item"><img src="assets/images/project4.jpg" alt=""
                                             title=""></div>
-                                    <div class="carousel-item"><img src="assets/images/project-1-2000x2829-800x1132.jpg"
+                                    <div class="carousel-item"><img src="assets/images/project5.jpg"
                                             alt="" title=""></div>
                                     <div class="carousel-item"><img
-                                            src="assets/images/project-1-2000x2829-800x1132-800x1132.jpg" alt=""
+                                            src="assets/images/project6.jpg" alt=""
                                             title=""></div>
-                                    <div class="carousel-item"><img src="assets/images/project-1-2000x2829.jpg" alt=""
+                                    <div class="carousel-item"><img src="assets/images/project7.jpg" alt=""
                                             title=""></div>
-                                    <div class="carousel-item"><img src="assets/images/project-5-360x488.jpg" alt=""
+                                    <div class="carousel-item"><img src="assets/images/project8.jpg" alt=""
                                             title=""></div>
-                                    <div class="carousel-item"><img src="assets/images/project-1-2000x2829.jpg" alt=""
-                                            title=""></div>
-                                    <div class="carousel-item"><img src="assets/images/project-1-2000x2829-800x1132.jpg"
-                                            alt="" title=""></div>
-                                    <div class="carousel-item"><img src="assets/images/project-5-360x488.jpg" alt=""
-                                            title=""></div>
-                                    <div class="carousel-item"><img src="assets/images/project-5-360x488-360x488.jpg"
-                                            alt="" title=""></div>
-                                    <div class="carousel-item"><img src="assets/images/project-5-360x488.jpg" alt=""
-                                            title=""></div>
-                                    <div class="carousel-item"><img src="assets/images/project-5-360x488.jpg" alt=""
-                                            title=""></div>
-                                    <div class="carousel-item"><img src="assets/images/project-5-360x488.jpg" alt=""
-                                            title=""></div>
-                                    <div class="carousel-item active"><img src="assets/images/project-5-360x488.jpg"
-                                            alt="" title=""></div>
+                                   
                                 </div><a class="carousel-control carousel-control-prev" role="button" data-slide="prev"
                                     href="#lb-gallery2-i"><span class="mbri-left mbr-iconfont"
                                         aria-hidden="true"></span><span class="sr-only">Previous</span></a><a

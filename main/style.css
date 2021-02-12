@@ -1,0 +1,445 @@
+@font-face {
+    font-family: 'hindbold';
+    src: url('fonts/hind-bold-webfont.woff2') format('woff2'), url('fonts/hind-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'hindlight';
+    src: url('fonts/hind-light-webfont.woff2') format('woff2'), url('fonts/hind-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'hindmedium';
+    src: url('fonts/hind-medium-webfont.woff2') format('woff2'), url('fonts/hind-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'hindregular';
+    src: url('fonts/hind-regular-webfont.woff2') format('woff2'), url('fonts/hind-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'hindsemibold';
+    src: url('fonts/hind-semibold-webfont.woff2') format('woff2'), url('fonts/hind-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'oswaldbold';
+    src: url('fonts/oswald-bold-webfont.woff2') format('woff2'), url('fonts/oswald-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'oswaldextralight';
+    src: url('fonts/oswald-extralight-webfont.woff2') format('woff2'), url('fonts/oswald-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'oswaldlight';
+    src: url('fonts/oswald-light-webfont.woff2') format('woff2'), url('fonts/oswald-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'oswaldmedium';
+    src: url('fonts/oswald-medium-webfont.woff2') format('woff2'), url('fonts/oswald-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'oswaldregular';
+    src: url('fonts/oswald-regular-webfont.woff2') format('woff2'), url('fonts/oswald-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'oswaldsemibold';
+    src: url('fonts/oswald-semibold-webfont.woff2') format('woff2'), url('fonts/oswald-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    background:#343a40;
+
+}
+
+#page {
+    display:flex;
+    background: #F5F5DC;
+    width: 90%;
+    margin: auto;
+    margin-top: 10vh;
+    min-height: 80vh;
+    height: auto;
+    padding-bottom:80px;
+}
+
+
+#content {
+    margin-top: 60px;
+}
+
+#cardPile {
+ margin: 0 auto; float:left; display:none;
+ width:100%; border-right:1px solid #000; padding-right:2%;
+ background-color: #fff6ea;
+ transition: left linear .2s;
+ padding-right:50%;
+}
+#cardPile.open {
+ left: 0px;
+ transition: left linear .2s;
+}
+ #cardPile {
+box-sizing:border-box;
+ margin-top:30px;
+ padding-right: 50%;
+}
+
+/* Individual cards and slots */
+
+#cardPile div {
+ float: left;
+ width: 128px;
+margin:5px 12px;
+height: 50px;
+line-height: 50px;
+padding: 0 5px;
+text-align: center;
+}
+
+#cardPile div, #uploadImage {
+   cursor: -webkit-grab; cursor: grab;
+}
+
+.clasin0 { font-family:'Merriweather'; font-size:16px; color:#000; }
+.clasin1 { font-family:'Ranchers'; font-size:16px; color:#556; }
+.clasin2 { font-family:'Playfair Display'; font-size:20px; color:#00f; }
+.clasin3 { font-family:'Rowdies'; font-size:18px; color:#ff0; }
+.clasin4 { font-family:'Red Rose'; font-size:14px; color:#f00; }
+.clasin5 { font-family:'Permanent Marker'; font-size:20px; color:#091426; }
+.clasin6 { font-family:'Dancing Script'; font-size:17px; color:#878; }
+.clasin7 { font-family:'Indie Flower'; font-size:18px; color:#00FFFF; }
+.clasin8 { font-family:'Shadows Into Light'; font-size:16px; color:#0000FF; }
+.clasin9 { font-family:'Amatic SC'; font-size:18px; color:#f00; }
+.clasin10 { font-family:'Caveat'; font-size:20px; color:#00FFFF; }
+.clasin11 { font-family:'Merriweather'; font-size:14px; }
+
+@media print {
+ body * {
+   visibility: hidden;
+ }
+
+ canvas {
+     position: absolute;
+     top:40px;
+     left:30px;
+      visibility: visible; 
+      -webkit-print-color-adjust: exact;
+    }
+
+}
+
+@media only screen and (max-width: 960px) {
+   #cardPile:after { clear:both; display:block; content:''; }
+   .wrap { width:98%; margin:0 auto; }
+   #cardPile { border-right:0px; }
+   #cardSlots, #cardPile { float:none; width:100%; margin-left:0px; margin-right:0px; }
+   #cardSlots { height:50vh; } 
+   .header_bg { background-size: 100% auto; }
+}
+@media (max-width: 768px) 
+{
+    #page
+    {
+        height:80% !important;
+    }
+}
+.clasin0 {background: #d2dad1 !important; font-weight:200; display: block; float: left !important;}
+.clasin1 {background: #000 !important;color:#fff;font-weight:200; display: block; float: left !important;}
+.clasin2 {background: #ae4639 !important;color:#fff; display: block; float: left !important;}
+.clasin3 {background: #d8dcdb !important;color:#303179;font-weight:200; display: block; float: left !important;}
+.clasin4 {background: url(bg-game/Untitled-3.png) center / cover !important;color:#496bda;font-weight:900;font-size:1.2em; display: block; float: left !important;}
+.clasin5 {background: #5c492b !important;color:#fff; display: block; float: left !important;}
+.clasin6 {background: #ccffff !important;color:#669999; display: block; float: left !important;}
+.clasin7 {background: url(bg-game/Untitled-0.png) center / cover !important;color:#336699; display: block; float: left !important;}
+.clasin8 {background: #efe7e4; color:#b3d7ff !important; display: block; float: left !important;}
+.clasin9 {background: url(bg-game/Untitled-4.png) center / cover !important;color:#000; display: block; float: left !important;}
+.clasin10 {background:#fff !important;color:#99cc66; display: block; float: left !important;}
+.clasin11 {background:#dab948 !important;color:#244643; display: block; float: left !important;}
+ #cardPile div {width: auto !important;}
+
+ #cardPile {
+   min-height: 600px;
+}
+
+.col-md-3
+{
+    width:25%;
+}
+.col-md-6
+{
+    width:50%;
+}
+
+.myButton {
+    box-shadow: 3px 10px 0px 0px #8a2a21;
+    background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    background-color: #c62d1f;
+    border-radius: 18px;
+    border: 1px solid #d02718;
+    display: inline-block;
+    cursor: pointer;
+    color: white !important;
+    font-family: Arial;
+    font-size: 21px;
+    text-align: center;
+    width: 200px;
+    margin-top: 10%;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #810e05;
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+    background-color: #f24437;
+}
+
+a:hover {
+    color: #00cc95 !important;
+    text-decoration: none;
+}
+
+#ten-countdown {
+    display: inline;
+    padding: 5px;
+    color: darkorange;
+    font-family: Rubik;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+}
+h3 {
+    font-weight: 200 !important;
+    line-height: 50px  !important;
+    font-size: 30px  !important;
+    margin:0px;
+}
+.text-success {
+    
+    color: #13ff92 !important;
+    font-weight:700;
+    font-size:1.1em;
+}
+
+.text-danger {
+    font-weight:500;
+    font-size:1em;
+    color: #ff0018 !important;
+}
+
+#userActions{
+	display: table-cell;
+	height: 150px !important;
+	width: 200px ;
+	vertical-align: middle;
+	text-align: center;
+	color: #37474F;
+	background-color: #FFFFFF;
+	border: solid 2px #333333;
+	border-radius: 10px;
+    z-index: 10;
+}
+#userActions input{
+	width: 150px;
+	margin: auto;
+    z-index: 10;
+}
+#imgPrime{ display: none; }
+
+.inputGroup {
+    background-color: #121212;
+    display: block;
+    margin: 10px 0;
+    position: relative;
+}
+    .label_option {
+      padding: 12px 80px;
+      width: 100%;
+      display: block;
+      text-align: left;
+      color: #bbb;
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+      transition: color 200ms ease-in;
+      overflow: hidden;
+      font-size:1.2em;
+    }
+      .label_option:before {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background:#121212;
+        content: '';
+/*         background-color: mediumseagreen; */
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale3d(1, 1, 1);
+        transition: all 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        opacity: 0;
+        z-index: -1;
+      }
+
+      .label_option:after {
+        width: 16px;
+        height: 16px;
+        content: '';
+        border: 2px solid #fff;
+/*         background-color: #289a2c; */
+/*         background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E "); */
+        background-repeat: no-repeat;
+        background-position: 0.5px 2px;
+        border-radius: 50%;
+        z-index: 2;
+        position: absolute;
+        left: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        transition: all 200ms ease-in;
+      }
+    
+
+    input:checked ~ .label_option {
+      color: #fff;
+    }
+    input:checked ~ .label_option:before {
+        transform: translate(-50%, -50%) scale3d(56, 56, 1);
+        opacity: 1;
+      }
+
+    input:checked ~ .label_option:after 
+    {
+        
+        background-color: #000;
+        border:3px solid #0BF88F ;
+      }
+    
+
+    #id_english, #id_deutsch, #id_option1, #id_option2 {
+      width: 16px;
+      height: 16px;
+      order: 1;
+      z-index: 2;
+      position: absolute;
+      left: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      visibility: hidden;
+    }
+  
+
+
+.form {
+  padding: 0 16px;
+  max-width: 550px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#page{
+    background-color: #121212;
+}
+#cardPile{
+    background-color:#faf5ef;
+    display:flex!important;
+    flex-wrap:wrap;
+/*     flex-direction:column; */
+    /* justify-content:space-evenly;	 */
+/*     padding:3%; */
+    padding: 2%;
+    padding-bottom:55%!important;
+}
+#cardPile .snippet{
+
+
+    /*     padding-right:7px;
+    padding-left:7px; */
+    box-sizing:content-box;
+    font-size:3.5em;
+    margin:0;
+    flex: 1 0 auto;
+    border:7px solid #efe9e9!important;
+    margin-right:20px;
+    margin-top:20px;
+    padding:0;
+    max-width:480px;
+    padding-bottom:5px;
+    overflow: hidden;
+
+}
+
+#cardPile :nth-last-child(1),
+#cardPile :nth-last-child(2),
+#cardPile :nth-last-child(3),
+#cardPile :nth-last-child(4),
+#cardPile :nth-last-child(5)
+{
+    flex:0 0 auto;
+    }
+
+
+.snippet img{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+
+#uploadImage{
+
+    min-width:14%;
+}
+#id_option2{
+    background-color:#525252cc!important;
+}
+
+
+/* Changing buttons colors */
+
+#restart{
+    box-shadow: 3px 10px 0px 0px #97389c;
+    background: linear-gradient(to bottom, #af47b5 5%, #c53bce 100%);
+    border-color:#af47b5;
+}
+#print{
+    box-shadow: 3px 10px 0px 0px #0855a9;
+    background: linear-gradient(to bottom, #1665b9 5%, #0079FB 100%);
+    border-color:#0079FB;
+}
+#finish{
+    font-size:1.5em;
+    font-weight:600;
+    box-shadow: 3px 10px 0px 0px #c4ab11 ;
+    background: linear-gradient(to bottom, #9c9c20 5%, #c9c917 100%);
+    border-color:#b1b100;
+}
+
+#select_sentence, #edit_sentence
+{
+    width:90%;
+    margin:5%;
+}
