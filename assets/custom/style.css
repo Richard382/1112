@@ -2,7 +2,7 @@
 {
     display: flex;
     background-position: bottom;
-     background-image: url("../../../assets/images/mbr-1920x1440.jpg");
+     background-image: url("../../../assets/images/image3.jpg");
    
 }
 #start_form
@@ -17,10 +17,12 @@
 {
     background-color: #0077ffe0;
     color: aliceblue;
-    width: 100px;
+    width: 300px;
+    height: 40px;
     float: right;
-    border-radius: 20px;
+    border-radius: 10px;
 }
+
 .ic_setting
 {
     float:right;

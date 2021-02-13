@@ -440,7 +440,17 @@ h3 {
 
 #select_sentence, #edit_sentence
 {
-    width:90%;
+    width:70%;
     margin:5%;
 }
 
+#random_form label 
+{
+    color:chartreuse;
+  
+}
+#random_form span
+{
+    color:darkkhaki;
+    padding-right:5px;
+}

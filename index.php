@@ -98,6 +98,8 @@
             border-radius: 50%;
             background: white;
         }
+
+      
     </style>
     </style>
 
@@ -165,7 +167,7 @@
         <div class="container align-center">
             <div class="row justify-content-md-center">
                 <div class="mbr-white col-md-10">
-                    <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">Matthias Schott</h1>
+                    <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">Collage Game</h1>
 
                     <p class="mbr-text pb-3 mbr-fonts-style display-5">
                         The aim of the game is to create a word collage, a
@@ -183,19 +185,19 @@
         </div>
     </section>
 
-    <section class="header3 cid-sn6OBUDEu5 mbr-parallax-background" id="header3-c" style="background:darkcyan;">
-
+    <section class="header3 cid-sn6OBUDEu5 mbr-parallax-background" id="header3-c" style="background:darkcyan; height:100vh;">
         <div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(35, 35, 35);">
         </div>
-
-        <div class="container">
-            <div class="media-container-row">
+        
+        <div class="container" style="height:100%;">
+        <h1 class="mbr-section-title mbr-white pb-3 mbr-fonts-style display-1" style="text-align:center; color:#fff;">INTRO</h1>    
+        <div class="media-container-row" style="position:absolute; transform:translate(0%, -50%); top:50%;">
                 <div class="mbr-figure" style="width: 200%;">
-                    <img src="assets/images/intro-office-911x683.jpg" alt="Mobirise" title="">
+                    <img src="assets/images/image1.jpg" alt="Mobirise" title="">
                 </div>
 
                 <div class="media-content">
-                    <h1 class="mbr-section-title mbr-white pb-3 mbr-fonts-style display-1">INTRO</h1>
+                   
                     <h3 class="mbr-section-subtitle align-left mbr-white mbr-light pb-3 mbr-fonts-style display-2">Word
                         Collages</h3>
                     <div class="mbr-section-text mbr-white pb-3 ">
@@ -210,7 +212,7 @@
                             <br>
                             <br>"Our game is for student. All student can play this game anytime."
                             <br>
-                            <br>Schott - CEO
+                         
                         </p>
                     </div>
 
@@ -294,16 +296,16 @@
 
  
 
-    <section class="header4" id="header4-k" > 
+    <section class="header4" id="header4-k" style="height:100vh;" > 
+      
+        <div class="container" style="height:100vh;">
         <h1 class="mbr-section-title align-center mbr-black pb-3 mbr-bold mbr-fonts-style display-2" style="padding-top:20px;">Main
             Page&nbsp;</h1>
-        <div class="container">
-            
-            <div class="row">
-                <div class="col-lg-5">
+            <div class="row" style="position:absolute; top:50%; transform:translate(0%,-50%);">
+                <div class="col-lg-6">
                     <div class="text-container">
                        
-                        <h2>This is page for Main page</h2>
+                        <h2>Option 1 is random mode game</h2>
                         <p>We have to add main game rule and work procedure in detail</p>
                         <ol id="instruction">
                         <li>Read this information</li>
@@ -320,48 +322,43 @@
                         </ol>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
-           
-    <div class="image-container col-lg-7"  id="start_form_panel" >
-                    <div class="form" id="start_form">
-                      <form action="game.php">
-                            <p>
-                                Select Time Limit:</p>
-                            <label class="container">15 min
-                                <input type="radio" class = "radio" value="15" checked="checked" name="time">
-                                <span class="checkmark"></span>
-                              </label>
-                              <label class="container">30 min
-                                <input type="radio" name="time" value="30">
-                                <span class="checkmark"></span>
-                              </label>
-                              <label class="container">45 min
-                                <input type="radio" name="time" value="45">
-                                <span class="checkmark"></span>
-                              </label>
-                              <label>Select Words:<br>
-                                <input type="range" name="words" id="range_weight" value="5" min="15" max="75" oninput="range_weight_disp.value = range_weight.value">
-                            <output  id="range_weight_disp"></output></label></label>
-                            <br>
+                <div class="col-lg-6">
+                    <div class="text-container">
+                       
+                        <h2>Option 2 is user inputting sentence game</h2>
+                        <p>We have to add main game rule and work procedure in detail</p>
+                        <ol id="instruction">
+                        <li>Read this information</li>
+
+                            <li>Select the number of words you want to use</li>
+                            
+                            <li>Press the "START" button</li>
+                            
+                            <li>A user interface will open. You can now line up the words in any way you like by "clicking" and "dragging" them and bringing them together.</li>
+                            
+                            <li>When you have placed all the words and are satisfied with your word collage, you can press the "PRINT" button. This will create a JPG that you can download to your computer.</li>
+                            
+                            <li>Exception - "all words": After a long struggle with the words, but never giving up too early, you may decide yourself not to use 1- 4 words.</li>
+                        </ol>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="form" style="margin:auto;">
+                            <form action="game.php" >
                               <input type="submit" class="button btn-start" value="start" />
                         </form>
-                     
-
                     </div>
-                </div> <!-- end of col -->
                 
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </section>
-
 
     <section class="mbr-gallery mbr-slider-carousel cid-sn6XE8MPnG" id="gallery2-i">
         <h1 class="mbr-section-title align-center mbr-black pb-3 mbr-bold mbr-fonts-style display-2" style="padding-top:20px;">Projects</h1>
         <div class="container">
             <div>
                 <iframe width="420" height="315"
-                src="https://www.bbc.com/news/av/entertainment-arts-35281247">
+                    src="https://www.youtube.com/watch?v=m1InCrzGIPU">
                 </iframe>
-                
             </div>
         </div>
 
@@ -546,7 +543,8 @@
 
       <!-- The Modal -->
       <div class="modal" id="settingModal">
-        <div class="modal-dialog">
+        <div class="modal-dialog" style="    width: 700px;
+    max-width: 700px;">
             <div class="modal-content">
 
                 <!-- Modal Header -->

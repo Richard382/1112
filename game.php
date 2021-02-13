@@ -129,16 +129,32 @@ for ($x = 0; $x < 15; $x++) {
                 <input id="id_option1" name="radio_mode" checked value="random_mode"  type="radio"/>
                 <label for="id_option1" class="label_option">Option 1 </label>
             </div>
+            <div id="random_form">
+                <label style="margin-left:60px;">Time:</label>
+                <span style="width:20px" id='time'>15</span>
+                <input type="number" hidden value="15" id="edit_time" min="1" max="60" style="width:50px"/>
+                <span>min</span>
+                <label>Words:</label><span id='word'  style="width:20px">15</span>
+                <input type="number" hidden value="15" id="edit_word" min="15" max="75" style="width:50px"/>
+                <div style="margin-top:-30px; text-align:right;">
+                      <a id="edit_random_form" style="color:red; cursor:pointer"  onclick="edit_random_form()">Edit</a>
+                      <a id="save_random_form" style="color:red; cursor:pointer" hidden onclick="save_random_form()">Save</a>
+                </div>
+            </div>
+
+                
             <div class="inputGroup">
                 <input id="id_option2" name="radio_mode" value="custom_mode" type="radio"/>
                 <label for="id_option2" class="label_option">Option 2 </label>
             </div>
         </form>
+       
+
         <div id="sentence_form" hidden>
-            <select id="select_sentence"  name="sentences">
+            <select id="select_sentence" style="margin-left:60px;"  name="sentences">
             </select>
-            <div style="margin-top:0px; text-align:right;">
-            <a id="edit_sentence" style="color:red; cursor:pointer" data-toggle="modal" data-target="#editModal">Edit</a>
+            <div style="margin-top:-50px; text-align:right;">
+            <a id="edit_sentence" style="color:red; cursor:pointer;" data-toggle="modal" data-target="#editModal">Edit</a>
             </div>
         </div>
     </div>
@@ -191,7 +207,8 @@ for ($x = 0; $x < 15; $x++) {
 <div id="output"></div> 
 
     <div class="modal" id="editModal">
-    <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-dialog modal-dialog-scrollable" style="    width: 700px;
+    max-width: 700px;">
       <div class="modal-content">
       
         <div class="modal-header">
@@ -211,7 +228,7 @@ for ($x = 0; $x < 15; $x++) {
             <div class="modal_edit_text" style="display:flex; justify-content: space-evenly; padding: 20px 0px;">
                 <select name="sentences" id="id_modal_select" style="width:30%; height:30px;" >
                 </select>
-                <textarea name="modal_edit_textarea" id="id_modal_edit_textarea" cols="30" rows="2"></textarea>
+                <textarea name="modal_edit_textarea" id="id_modal_edit_textarea" cols="30" rows="4"></textarea>
             </div>
             <div class="modal_add_text" style="justify-content: space-evenly; padding: 20px 0px;" hidden>
                 <div class="row">
@@ -221,7 +238,7 @@ for ($x = 0; $x < 15; $x++) {
                     </div>
                     <div class="col-8" >
                         <input type="text" name="newTitle" id="new_title" >
-                        <textarea name="modal_new_textarea" id="id_modal_new_textarea" cols="30" rows="3" style="margin-top:10px;"></textarea>
+                        <textarea name="modal_new_textarea" id="id_modal_new_textarea" cols="30" rows="4" style="margin-top:10px;"></textarea>
                     </div>
                 </div>
                 
@@ -257,6 +274,7 @@ for ($x = 0; $x < 15; $x++) {
     var countOfWord = <?= $words ?>;
     var words = [<?=$arrgmEng?>];
     var wordsDeu = [<?=$arrgmDeu?>];
+    var init_timer = <?=$time; ?>;
     var titles = "";
     <?php
         $arrWord = "";
@@ -268,9 +286,49 @@ for ($x = 0; $x < 15; $x++) {
             $arrWord .= "'".$array_title[$k]."', ";
         }
     ?>
+
   
   var array_sentence = [<?= $arrSentence?>];
   var array_title = [<?= $arrWord?>];
+
+  function edit_random_form() {
+    jQuery('#edit_time').removeAttr('hidden');
+    jQuery('#edit_word').removeAttr('hidden');
+    jQuery('#time').attr('hidden', true);
+    jQuery('#word').attr('hidden', true);
+    jQuery('#edit_random_form').attr('hidden', true);
+    jQuery('#save_random_form').removeAttr('hidden');
+  }
+  function save_random_form() {
+      var time = jQuery('#edit_time').val();
+      var word = jQuery('#edit_word').val();
+    jQuery('#edit_time').attr('hidden', true);
+    jQuery('#edit_word').attr('hidden', true);
+    jQuery('#time').removeAttr('hidden');
+    jQuery('#word').removeAttr('hidden');
+    jQuery('#save_random_form').attr('hidden', true);
+    jQuery('#edit_random_form').removeAttr('hidden');
+    jQuery('#edit_time').val(time);
+    jQuery('#edit_word').val(word);
+    jQuery('#time').text(time);
+    jQuery('#word').text(word);
+    init_timer = time;
+    if(jQuery('input[name=radio_language]:checked').val() == 'eng')
+    {
+        words = [<?= $arrgmEng?>];
+        removeWords();
+        makeWords(words, word);
+        resetTimer(time);
+    }
+    else 
+    {
+        words = [<?= $arrgmDeu?>];
+        removeWords();
+        makeWords(words, word);
+        resetTimer(time);
+    }
+    
+  }
   function makeWords(numbers, selnumb)
         {
             numbers.sort( function() { return Math.random() - .5 } );
@@ -305,9 +363,9 @@ for ($x = 0; $x < 15; $x++) {
         {
             jQuery('.snippet').remove();
         }
-        function resetTimer()
+        function resetTimer(time)
         {
-            Clock.totalSeconds = <?= $time; ?> * 60;
+            Clock.totalSeconds = time * 60;
             Clock.remove();
             Clock.start();
         }
@@ -340,7 +398,7 @@ for ($x = 0; $x < 15; $x++) {
             }, 800);
             
             makeWords(words, countOfWord);
-            resetTimer();
+            resetTimer(init_timer);
         }
         start();
         jQuery('#id_modal_edit_textarea').val(array_sentence[0]);
@@ -382,7 +440,7 @@ for ($x = 0; $x < 15; $x++) {
             countOfWord = words.length;
             removeWords();
             makeWords(words, countOfWord);
-            resetTimer();
+            resetTimer(init_timer);
             });
          });
      
@@ -491,14 +549,14 @@ for ($x = 0; $x < 15; $x++) {
                words = [<?= $arrgmEng?>];
                removeWords();
                makeWords(words, countOfWord);
-               resetTimer();
+               resetTimer(init_timer);
             }
             else 
             {
                words = [<?= $arrgmDeu?>];
                removeWords();
                makeWords(words, countOfWord);
-               resetTimer();
+               resetTimer(init_timer);
             }
         });
 
@@ -509,26 +567,28 @@ for ($x = 0; $x < 15; $x++) {
                     countOfWord = words.length;
                     removeWords();
                     makeWords(words, countOfWord);
-                    resetTimer();
+                    resetTimer(init_timer);
                     jQuery('#sentence_form').removeAttr('hidden');
+                    jQuery('#random_form').attr('hidden', true);
             }
             else 
             {
                 countOfWord = <?= $words?>;
                 jQuery('#sentence_form').attr('hidden', true);
+                jQuery('#random_form').removeAttr('hidden');
                 if(jQuery('input[name=radio_language]:checked').val() == 'eng')
                 {
                     words = [<?= $arrgmEng?>];
                     removeWords();
                     makeWords(words, countOfWord);
-                    resetTimer();
+                    resetTimer(init_timer);
                 }
                 else 
                 {
                     words = [<?= $arrgmDeu?>];
                     removeWords();
                     makeWords(words, countOfWord);
-                    resetTimer();
+                    resetTimer(init_timer);
                 }
             }
         });
