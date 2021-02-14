@@ -369,18 +369,12 @@
             <div class="media-container-row">
                 <div class="media-content px-3 align-self-center mbr-white py-2">
                     <p class="mbr-text testimonial-text mbr-fonts-style display-7"><strong><br>ABOUT
-                        </strong><br>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga
-                        eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
-                        suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic
-                        quas.<br><br><strong>UI/UX Designer &amp; Web Developer.
+                        </strong><br>The Studio offers live and online acting and directing workshops, masterclasses and private coachings with internationally renowned tutors, coaches and directors from the US, the UK, Australia and New Zealand.<br><br><strong>UI/UX Designer &amp; Web Developer.
                         </strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua.
                         <br>
-                        <br>Birthday: 1 May 1995
-                        <br>Website: www.example.com
-                        <br>Phone: +123 456 7890
-                        <br>City: City : New York, USA
-                        <br>Age: 30
+                        <br>Website: https://www.schott-acting-studio.de
+                        <br>City: Berlin : German
                         <br><br>Degree: Master
                         <br>PhEmailone: email@example.com
                         <br>Freelance: Available
@@ -405,9 +399,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="google-map"><iframe frameborder="0" style="border:0"
-                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDk89J4FSunMF33ruMVWJaJht_Ro0kvoXs&amp;q=place_id:ChIJK7Ob8Td-j4ARXP2pzxXTrFA"
-                            allowfullscreen=""></iframe></div>
+                   <img src="assets/images/image5.png" style="width:inherit" alt="">
                 </div>
                 <div class="col-md-6">
                     <h2 class="pb-3 align-left mbr-fonts-style display-2">
@@ -424,8 +416,7 @@
                             <h5 class="align-left mbr-fonts-style display-7">You can stop by our office for a cup of
                                 coffee and just use the contact form below for any questions and inquiries</h5>
                             <p class="mbr-text align-left mbr-fonts-style display-7">
-                                Phone: +81 720 22 128<br>Phone: +81 720 22 126<br>
-                                Email: office@aria.com
+                                info@schott-acting-studio.de
                             </p>
                         </div>
                     </div>
@@ -492,9 +483,8 @@
                     <h5 class="pb-3">
                         Contacts
                     </h5>
-                    <p class="mbr-text">Phone: +81 720 22 128
-                        <br>Phone: +81 720 22 126
-                        <br>Email: office@aria.com<br><br>
+                    <p class="mbr-text">
+                        <br>Email: info@schott-acting-studio.de<br><br>
                     </p>
                 </div>
                 <div class="col-12 col-md-3 mbr-fonts-style display-7">
