@@ -10,7 +10,7 @@ class home_model extends CI_Model {
     var $table_bywords = "bywordstable";
     var $table_bysentences = "bysentencestable";
 
-    function __construct() {
+    public function __construct() {
         parent::__construct();
         $this->load->database();
     }

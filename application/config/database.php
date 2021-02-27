@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'collage-schott',
+	'hostname' => 'http://testing.jbms-tech.com/',
+	'username' => 'i6_root_user',
+	'password' => 'RAUWC6hez',
+	'database' => 'i6_collage-schott',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
