@@ -13,15 +13,6 @@
     border-radius: 5px;
     background-image: linear-gradient(#121212 37%, #0077ffe0);
 }
-.btn-start
-{
-    background-color: #0077ffe0;
-    color: aliceblue;
-    width: 300px;
-    height: 40px;
-    float: right;
-    border-radius: 10px;
-}
 
 .ic_setting
 {
@@ -30,13 +21,223 @@
     margin-right:-40px;
 }
 
-.header4 
-{
-    background-color: darkgray;
-}
+
 
 #settingModal
 {
     height: 600px;
+}
+
+
+.tab{
+    box-shadow:0 3px 10px rgba(0,0,0,.3);
+}
+.tab .nav-tabs{
+    border-bottom:2px solid #29999f;
+}
+.tab .nav-tabs li{
+    margin-bottom:0px;
+    margin-right:0px;
+}
+.tab .nav-tabs li a {
+    font-size:14px;
+    color:#808080;
+    outline:none;
+    margin-right:0px;
+    padding:20px 25px;
+    border-radius:0;
+    text-transform:uppercase;
+}
+.tab .nav-tabs li a:hover,
+.tab .nav-tabs li.active a{
+    background:#1fd6e0;
+    color:#fff;
+}
+.tab .tab-content{
+    color:#5a5c5d;
+    padding: 20px;
+}
+@media only screen and (max-width: 480px){
+    .tab .nav-tabs > li{ width:100%; }
+}
+
+
+/* M- 26-2 */
+
+.header4{
+    max-width: 100vw;
+}
+
+
+.header4 article{
+    box-sizing: border-box;
+    max-width: 100vw;
+    padding: 3em 0em;
+}
+
+.header4 article .container{
+    margin:0 auto;
+    display:flex;
+}
+
+.header4 article:nth-of-type(odd){
+    background:#28527a;
+}
+
+.header4 .text-container{
+    /* flex:0 0 50%; */
+    color: #cfcfcf;
+    font-size: calc(10px + (17 - 10) * ((100vw - 300px) / (1600 - 300)));
+}
+.header4 .text-container h2{
+    color:#fff;
+    font-size: calc(14px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+.header4 .text-container p{    color: #cfcfcf;}
+
+.header4 article:nth-of-type(even) .text-container{
+    color:#121212;
+    order:5
+}
+.header4 article:nth-of-type(even) .text-container h2{color:#121212}
+.header4 article:nth-of-type(even) .text-container p{color: #121212;}
+
+@media(max-width:992px){
+    .header4 .circle-container:nth-of-type(even){
+        order:10
+    }
+}
+
+.circle-container{
+    display:flex;
+    justify-content:center;
+    padding-top: 5%;
+}
+.circle{
+    background-color:#a1cae2;
+    width:2.5em;
+    height:2.5em;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    font-size:calc(50px + (150 - 50) * ((100vw - 300px) / (1600 - 300)));
+    box-shadow:-1.75vw 1vw 0 10px #fbeeac;
+}
+article:nth-of-type(2){
+    background:#f6f5f5
+}
+article:nth-of-type(2) .circle{
+    background-color:#1687a7;  
+    box-shadow:1.75vw 1vw 0 10px #d3e0ea;
+}
+
+
+article:nth-of-type(3) .circle{
+    background: #ec4646;
+    box-shadow:-1.75vw 1vw 0 10px #51c2d5;
+    
+}
+
+/* Start game button */
+
+.btn-start-container{
+    margin: 2em auto !important;
+}
+
+.btn-start{
+    background: #28527A;
+    color: #e0e0e0;
+    padding: 1em 3.8em;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all .7s ease ;
+}
+.btn-start:hover{
+    transform: scale(1.05);
+    /* box-shadow: 0 0 3px 2px #149dcc; */
+}
+
+/* @media(max-width) */
+
+.btn-start {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+.btn-start {
+    width: 12rem;
+    height: auto;
+}
+.btn-start .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+}
+.btn-start .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+.btn-start .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+.btn-start .circle .icon.arrow::before {
+    position: absolute;
+    content: '';
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+.btn-start .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+.btn-start:hover .circle {
+    width: 100%;
+}
+.btn-start:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+.btn-start:hover .button-text {
+    color: #fff;
 }
 
